@@ -6,12 +6,12 @@
 }
 
 body {
+    overflow: hidden;
     background-color: #F7E4DF;
 }
 
 .container {
     position: relative;
-    top: 10vh;
 }
 
 .hey {
@@ -116,7 +116,26 @@ body {
         justify-content: center;
         align-items: center;
         height: 100vh;
-        top: 0;
+    }
+
+    .text {
+        position: absolute;
+        transform: translateY(-4rem);
+    }
+
+    .text .bf {
+        margin-top: 2rem;
+    }
+
+    #letter p {
+        color: #103362;
+        text-align: center;
+        text-decoration: none;
+        background-color: #F9B53F;
+        padding: 15px;
+        border-radius: 5px;
+        font-family: Oldenburg;
+        font-size: 30px;
     }
 
 }
@@ -189,7 +208,6 @@ body {
     height: auto;
     object-fit: cover;
     position: absolute;
-    transform: translateY(1px);
 }
 
 #artis {
@@ -198,6 +216,7 @@ body {
     height: 250px;
     border-radius: 50%;
     object-fit: cover;
+    transform: translate(-4px, -1px);
 }
 
 @media only screen and (max-width: 700px) {
@@ -211,4 +230,31 @@ body {
         width: 299px;
         height: auto;
     }
+}
+
+
+/* Bagian letter */
+
+#letter {
+    position: absolute;
+    right: 0;
+    margin-top: 1rem;
+}
+
+#letter {
+    background-color: #F9B53F;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+}
+
+#letter:hover {
+    background-color: #000000;
+}
+
+
+
+/* Bagian musik */
+
+audio {
+    display: none;
 }

@@ -1,7 +1,8 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const body = document.querySelector("body");
+let oneTime = true;
 
-    body.addEventListener("click", function () {
-        window.location.href = "home.html";
-    });
-});
+if (oneTime) {
+    setTimeout(() => {
+        window.location.href = 'home.html'
+    }, 5000);
+    oneTime = false;
+}

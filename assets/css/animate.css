@@ -15,11 +15,29 @@
 }
 
 #frame {
-    animation: putarFrame 60s linear infinite;
+    animation: putarFrame 100s linear infinite;
 }
 
 .hold {
     animation-duration: 1.2s;
+}
+
+#letter {
+    animation: notif 3s ease-out infinite;
+}
+
+@keyframes notif {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 
