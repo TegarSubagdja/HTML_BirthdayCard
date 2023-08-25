@@ -92,7 +92,6 @@ body {
     display: flex;
     justify-content: space-between;
     bottom: 0;
-    z-index: -1;
 }
 
 .greet {
@@ -130,7 +129,6 @@ body {
 }
 
 #artis {
-    z-index: -1;
     width: 250px;
     height: 250px;
     border-radius: 50%;
@@ -166,7 +164,6 @@ body {
     justify-content: center;
     width: 100%;
     top: 0;
-    z-index: 1;
 }
 
 audio {
@@ -189,6 +186,13 @@ audio {
 .modal-part img {
     width: 40px;
     height: auto;
+}
+
+.emoji {
+    position: relative;
+    max-width: 10%;
+    top: -12px;
+    left: -14px;
 }
 
 @media screen and (min-width: 901px) {
