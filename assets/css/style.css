@@ -173,12 +173,6 @@ audio {
 /* Bagian modal */
 
 .modal-part {
-    position: absolute;
-    right: 10vh;
-    bottom: 10vh;
-}
-
-.modal-part {
     padding: 10px;
     border-radius: 12px;
 }
