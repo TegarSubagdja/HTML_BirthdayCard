@@ -26,6 +26,24 @@
     animation: notif 3s ease-out infinite;
 }
 
+.modal-part {
+    animation: kedip 1s ease-out infinite;
+}
+
+@keyframes kedip {
+    0% {
+        background-color: #F9B53F;
+    }
+
+    50% {
+        background-color: #a79578;
+    }
+
+    100% {
+        background-color: #F9B53F;
+    }
+}
+
 @keyframes notif {
     0% {
         transform: scale(1);

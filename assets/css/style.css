@@ -92,6 +92,7 @@ body {
     display: flex;
     justify-content: space-between;
     bottom: 0;
+    z-index: -1;
 }
 
 .greet {
@@ -104,6 +105,90 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+/* Halaman Pertama */
+
+.container-first {
+    position: relative;
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#frame {
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+}
+
+#artis {
+    z-index: -1;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    transform: translate(-4px, -1px);
+}
+
+/* Bagian letter */
+
+#letter {
+    position: absolute;
+    right: 0;
+    margin-top: 1rem;
+}
+
+#letter {
+    background-color: #F9B53F;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+}
+
+#letter:hover {
+    background-color: #000000;
+}
+
+
+/* Bagian Musik */
+
+.media {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+audio {
+    height: 20px;
+}
+
+/* Bagian modal */
+
+.modal-part {
+    position: absolute;
+    right: 10vh;
+    bottom: 10vh;
+}
+
+.modal-part {
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.modal-part img {
+    width: 40px;
+    height: auto;
 }
 
 @media screen and (min-width: 901px) {
@@ -136,6 +221,12 @@ body {
         border-radius: 5px;
         font-family: Oldenburg;
         font-size: 30px;
+    }
+
+    .modal-part {
+        position: absolute;
+        right: 20vh;
+        bottom: 20vh;
     }
 
 }
@@ -184,39 +275,17 @@ body {
         margin: 0;
         margin-top: 2rem;
     }
-}
 
+    .modal-part img {
+        width: 40px;
+        height: auto;
+    }
 
-
-/* Halaman Pertama */
-
-.container-first {
-    position: relative;
-    display: flex;
-    height: 90vh;
-    align-items: center;
-    justify-content: center;
-}
-
-.content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#frame {
-    height: auto;
-    object-fit: cover;
-    position: absolute;
-}
-
-#artis {
-    z-index: -1;
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    object-fit: cover;
-    transform: translate(-4px, -1px);
+    .modal-part {
+        position: absolute;
+        right: 20vh;
+        bottom: 10vh;
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -230,23 +299,15 @@ body {
         width: 299px;
         height: auto;
     }
-}
 
+    .modal-part img {
+        width: 20px;
+        height: auto;
+    }
 
-/* Bagian letter */
-
-#letter {
-    position: absolute;
-    right: 0;
-    margin-top: 1rem;
-}
-
-#letter {
-    background-color: #F9B53F;
-    padding: 10px;
-    border-radius: 5px 0 0 5px;
-}
-
-#letter:hover {
-    background-color: #000000;
+    .modal-part {
+        position: absolute;
+        right: 10vh;
+        bottom: 10vh;
+    }
 }

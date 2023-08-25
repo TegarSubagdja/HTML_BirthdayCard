@@ -1,20 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/animate.css">
   <link rel="icon" href="assets/logo/Add Song_1.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <title>Happy 21's</title>
 </head>
 
 <body>
+
+  <div class="media">
+    <audio src="assets/musik/musik.mp3" controls></audio>
+  </div>
   <div class="tirai">
     <img class="inKiri" src="assets/gambar/tiraiKiri.png" alt="">
     <img class="inKanan" src="assets/gambar/tiraiKanan.png" alt="">
   </div>
+
   <div class="container">
     <div class="text">
       <div class="greet">
@@ -23,20 +29,55 @@
       </div>
       <div class="wish">
         <p class="birthday">Happy Birthday</p>
-        <p class="desc">May all your wishes come true </p>
+        <p class="desc">May all your wishes come true</p>
       </div>
       <div class="bf">
         <p class="from">from Tegarr</p>
       </div>
     </div>
+
+    <!-- Bagian modal -->
+    <div class="modal-part">
+
+      <a type="button" id="show" data-toggle="modal" data-target="#exampleModalLong">
+        <img class="letter active" src="assets/gambar/Flip Chart.png" alt="">
+      </a>
+
+      <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">For my Fera</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Happy Birthday to my dearest love! 🎉 On this special day, I want to shower you with endless praise and
+              heartfelt prayers. Your presence in my life is a constant source of joy and inspiration. Your kindness,
+              beauty, and unwavering support light up my world in ways words can't express. May this year bring you
+              boundless success, health, and happiness as you continue to grace the world with your amazing presence. As
+              we celebrate, I also want to acknowledge my shortcomings and mistakes that have caused you sadness. I
+              deeply regret the moments I've fallen short of making you as happy as you deserve, and for the times I've
+              let you down. Please know that I'm committed to becoming a better partner, and I promise to work
+              tirelessly to ensure that your happiness becomes my priority. Here's to your special day, and to us
+              growing stronger together. Happy birthday, my love. ❤️🎂
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+
   <div class="bottom">
     <img class="inKiri hold" src="assets/gambar/terompetKiri.png" alt="">
     <img id="inBawah" src="assets/gambar/kue.png" alt="">
     <img class="inKanan hold" src="assets/gambar/terompetKanan.png" alt="">
   </div>
-
-  <div id="media"></div>
   <script src="assets/js/play.js"></script>
 </body>
 

@@ -1,13 +1,8 @@
-const media = document.getElementById('media');
-
-setTimeout(() => {
-    media.innerHTML = `
-
-    <audio src="assets/musik/musik.mp3" controls autoplay hidden>
-    <p>
-      tidak ada jalan menuju roma!
-    </p>
-    </audio>
-    
-    `;
-}, 2000);
+const button = document.getElementById('show');
+const div = document.getElementsByClassName('modal-part')[0];
+button.addEventListener('click', () => {
+  setTimeout(() => {
+    button.style.display = 'none';
+    div.classList.remove('modal-part');
+  }, 1000);
+});
