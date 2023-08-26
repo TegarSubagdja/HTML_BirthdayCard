@@ -2,21 +2,21 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="stylesheet" href="./assets/css/animate.css">
   <link rel="icon" href="assets/logo/Add Song_1.png" type="image/x-icon">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/animate.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
   <title>Happy 21's</title>
 </head>
 
 <body>
+  <!-- Bagian Atas -->
   <div class="tirai">
     <img class="inKiri" src="assets/gambar/tiraiKiri.png" alt="">
     <img class="inKanan" src="assets/gambar/tiraiKanan.png" alt="">
   </div>
-
+  <!-- Bagian Tengah -->
   <div class="container">
     <div class="text">
       <div class="greet">
@@ -32,51 +32,43 @@
       </div>
     </div>
   </div>
+  <!-- Bagian Bawah -->
   <div class="bottom">
     <img class="inKiri hold" src="assets/gambar/terompetKiri.png" alt="">
     <img id="inBawah" src="assets/gambar/kue.png" alt="">
     <img class="inKanan hold" src="assets/gambar/terompetKanan.png" alt="">
   </div>
+  <!-- Bagian Modal -->
+  <button type="button" id="button" class="btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#myModal">Klik
+    Me!</button>
+  <!-- Modal -->
+  <div class="modal fade" tabindex="-1" aria-labelledby="fade" aria-hidden="true" id="myModal">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Dear Fera </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Happy Birthday to my beloved! 🎉 On this awesome day, I just wanna shower you with lots of love and good
+            vibes. You being in my life is like a daily dose of happiness and motivation. Your kindness, beauty, and the
+            way you've always had my back just light up my world in ways I can't even put into words.
 
-  <!-- Bagian modal -->
-  <div class="modal-part">
-    <a type="button" id="show" data-toggle="modal" data-target="#exampleModalLong">
-      <img class="letter active" src="assets/gambar/Flip Chart.png" alt="">
-    </a>
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
-      aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h3 class="modal-title" id="exampleModalLongTitle">
-              For my Fera
-              <span class="emoji">&#x1F9E1;</span>
-            </h3>
-
-            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button> -->
-          </div>
-          <div class="modal-body">
-            Happy Birthday to my dearest love! 🎉 On this special day, I want to shower you with endless praise and
-            heartfelt prayers. Your presence in my life is a constant source of joy and inspiration. Your kindness,
-            beauty, and unwavering support light up my world in ways words can't express. May this year bring you
-            boundless success, health, and happiness as you continue to grace the world with your amazing presence. As
-            we celebrate, I also want to acknowledge my shortcomings and mistakes that have caused you sadness. I
-            deeply regret the moments I've fallen short of making you as happy as you deserve, and for the times I've
-            let you down. Please know that I'm committed to becoming a better partner, and I promise to work
-            tirelessly to ensure that your happiness becomes my priority. Here's to your special day, and to us
-            growing stronger together. Happy birthday, my love. ❤️🎂
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
-          </div>
+            Here's to hoping this year brings you a ton of success, health, and happiness as you keep being the amazing
+            person you are. And speaking of today, I also wanna say that I know I haven't always been the best, and I'm
+            sorry for the times I've made you sad. I really wish I could've always kept that smile on your face, and I
+            regret those moments when I fell short.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
   </div>
   <script src="assets/js/play.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

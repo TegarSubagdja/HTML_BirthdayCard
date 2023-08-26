@@ -5,9 +5,28 @@
     margin: 0;
 }
 
+:root {
+    --color-bg-andro: #F7E4DF;
+    --color-bg-dekstop: #9ddfd5;
+    --color-merah: #F14947;
+    --color-biru: #446DB7;
+    --color-kuning: #F9B53F;
+    --color-hijau: #3BA27A;
+    --color-text-biru: #103362;
+    --color-text-hitam: #000000;
+}
+
 body {
     overflow: hidden;
-    background-color: #F7E4DF;
+    background-color: var(--color-bg-dekstop);
+}
+
+
+#button {
+    position: absolute;
+    transform: translateX(-10px);
+    top: 45vh;
+    color: white;
 }
 
 .container {
@@ -136,97 +155,21 @@ body {
     transform: translate(-4px, -1px);
 }
 
-/* Bagian letter */
+@media only screen and (max-width: 700px) {
 
-#letter {
-    position: absolute;
-    right: 0;
-    margin-top: 1rem;
-}
-
-#letter {
-    background-color: #F9B53F;
-    padding: 10px;
-    border-radius: 5px 0 0 5px;
-}
-
-#letter:hover {
-    background-color: #000000;
-}
-
-
-/* Bagian Musik */
-
-.media {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    top: 0;
-}
-
-audio {
-    height: 20px;
-}
-
-/* Bagian modal */
-
-.modal-part {
-    padding: 10px;
-    border-radius: 12px;
-}
-
-.modal-part img {
-    width: 40px;
-    height: auto;
-}
-
-.emoji {
-    position: relative;
-    max-width: 10%;
-    top: -12px;
-    left: -7px;
-}
-
-@media screen and (min-width: 901px) {
     body {
-        background-color: #9ddfd5;
+        background-color: var(--color-bg-andro);
     }
 
-    .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
+    #artis {
+        width: 150px;
+        height: 150px;
     }
 
-    .text {
-        position: absolute;
-        transform: translateY(-4rem);
+    #frame {
+        width: 299px;
+        height: auto;
     }
-
-    .text .bf {
-        margin-top: 2rem;
-    }
-
-    #letter p {
-        color: #103362;
-        text-align: center;
-        text-decoration: none;
-        background-color: #F9B53F;
-        padding: 15px;
-        border-radius: 5px;
-        font-family: Oldenburg;
-        font-size: 30px;
-    }
-
-    .modal-part {
-        position: absolute;
-        right: 20vh;
-        bottom: 20vh;
-    }
-
 }
 
 @media only screen and (max-width: 900px) {
@@ -273,39 +216,26 @@ audio {
         margin: 0;
         margin-top: 2rem;
     }
-
-    .modal-part img {
-        width: 40px;
-        height: auto;
-    }
-
-    .modal-part {
-        position: absolute;
-        right: 20vh;
-        bottom: 10vh;
-    }
 }
 
-@media only screen and (max-width: 700px) {
-
-    #artis {
-        width: 150px;
-        height: 150px;
+@media screen and (min-width: 901px) {
+    body {
+        background-color: var(--color-bg-dekstop);
     }
 
-    #frame {
-        width: 299px;
-        height: auto;
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
     }
 
-    .modal-part img {
-        width: 20px;
-        height: auto;
-    }
-
-    .modal-part {
+    .text {
         position: absolute;
-        right: 10vh;
-        bottom: 10vh;
+        transform: translateY(-4rem);
+    }
+
+    .text .bf {
+        margin-top: 2rem;
     }
 }
